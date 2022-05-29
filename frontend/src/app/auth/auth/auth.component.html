@@ -1,0 +1,9 @@
+<ng-container [ngSwitch]="$status">
+  <ng-container *ngSwitchCase="false">
+      <button (click)="register()" class="btn-log">Login</button>
+  </ng-container>
+  <ng-container *ngSwitchCase="true">
+      <a routerLink="/profile" routerLinkActive="active" class="username">{{ $userProfile.username }}</a>
+      <button (click)="logOut()" class="btn-log">Log Out</button>
+  </ng-container>
+</ng-container>

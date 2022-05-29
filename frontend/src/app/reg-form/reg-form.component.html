@@ -1,0 +1,41 @@
+
+
+
+<ng-container [ngSwitch]="regLogin">
+  <ng-container *ngSwitchCase="'log'">
+    <form class="login_form" [formGroup]="loginForm">
+      <p class="welcome">WELCOME</p>
+      <p class="log_username small_text">username</p>
+      <input class="log_username_input input" type="text" name="uname" formControlName="username" required>
+      <p class="log_password small_text">password</p>
+      <input class="log_password_input input" type="password" name="psw" formControlName="password" required>
+      <p class="message">{{message}}</p>
+      <button (click)="login()" [disabled]="!loginForm.valid" class="log_login btn-log" type="submit">Login</button>
+      <div class="log_register_container">
+        <p class="small_text">Don’t have an account? </p>
+        <p class="sign_up small_text" (click)="menuTab('reg')">Sign Up</p>
+      </div>
+    </form>
+  </ng-container>
+  <ng-container *ngSwitchCase="'reg'">
+    <form class="register_form" [formGroup]="registerForm">
+      <p class="welcome">WELCOME</p>
+      <p class="reg_username small_text">username</p>
+      <input class="reg_username_input input" type="text" name="uname" formControlName="username" required>
+      <p class="reg_password small_text">password</p>
+      <input class="reg_password_input input" type="password" name="psw" formControlName="password" required>
+      <p class="reg_re_password small_text">repeate password</p>
+      <input class="reg_re_password_input input" type="password" name="rpsw" formControlName="repeatPassword" required>
+      <p class="message">{{message}}</p>
+      <button (click)="register()" [disabled]="!registerForm.valid" class="reg_register btn-log" type="submit">Register</button>
+      <div class="reg_login_container">
+        <p class="small_text">Already have an account? </p>
+        <p class="reg_login small_text"  (click)="menuTab('log')">login</p>
+      </div>
+      </form>
+  </ng-container>
+  <ng-container *ngSwitchCase="''">
+    <h3>Please register or login</h3>
+  </ng-container>
+</ng-container>
+

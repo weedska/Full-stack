@@ -1,0 +1,172 @@
+.small_text {
+  font-size: 10px;
+}
+
+.btn-log {
+  font-size: 12px;
+  border-radius: 3px;
+  border: 0px;
+  min-width: 120px;
+  height: 25px;
+  color: #000000;
+  background-color: #81b214;
+}
+
+.btn-log:hover {
+  color: #000000;
+  background-color: #92c428;
+  font-size: 14px;
+}
+
+.btn-log:active {
+  color: #000000;
+  background-color: #81b214;
+  border: 2px solid #206a5d;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.btn-log:focus {
+  outline: none;
+}
+
+.input {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid #dadada;
+  min-width: 120px;
+  height: 25px;
+  padding-left: 5px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.input:focus {
+  border-bottom: 2px solid #81b214;
+  outline: none;
+}
+
+.sign_up,.reg_login{
+  text-align: center;
+}
+
+.sign_up:hover,.reg_login:hover {
+  color: #81b214;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.message {
+  display: grid;
+  grid-area: message;
+  align-self: center;
+  justify-self: center;
+  font-size: 10px;
+  color: red;
+}
+
+/* Login form */
+
+.login_form {
+  display: grid;
+  grid-template-areas:
+    "welcome"
+    "username"
+    "imput_username"
+    "password"
+    "imput_password"
+    "message"
+    "login"
+    "register";
+  grid-gap: 5px;
+  margin: 0;
+  padding: 20px;
+  grid-auto-rows: 80px 20px 30px 20px 30px 15px 30px 60px;
+}
+
+.welcome {
+  grid-area: welcome;
+  text-align: center;
+  font-size: 45px;
+  color: #1b1d17;
+}
+.log_username {
+  grid-area: username;
+  align-self: end;
+}
+.log_username_input {
+  grid-area: imput_username;
+}
+.log_password {
+  grid-area: password;
+  align-self: end;
+}
+.log_password_input {
+  grid-area: imput_password;
+}
+.log_login {
+  grid-area: login;
+}
+.log_register_container {
+  grid-area: register;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Register form */
+
+.register_form {
+  display: grid;
+  grid-template-areas:
+    "welcome"
+    "username"
+    "imput_username"
+    "password"
+    "imput_password"
+    "re_password"
+    "re_imput_password"
+    "message"
+    "register"
+    "login";
+  grid-gap: 5px;
+  margin: 0;
+  padding: 20px;
+  grid-auto-rows: 80px 20px 30px 20px 30px 20px 30px 15px 30px 60px;
+}
+
+.welcome {
+  grid-area: welcome;
+  text-align: center;
+  font-size: 45px;
+  color: #1b1d17;
+}
+.reg_username {
+  grid-area: username;
+  align-self: end;
+}
+.reg_username_input {
+  grid-area: imput_username;
+}
+.reg_password {
+  grid-area: password;
+  align-self: end;
+}
+.reg_password_input {
+  grid-area: imput_password;
+}
+.reg_re_password {
+  grid-area: re_password;
+  align-self: end;
+}
+.reg_re_password_input {
+  grid-area: re_imput_password;
+}
+.reg_register {
+  grid-area: register;
+}
+.reg_login_container {
+  grid-area: login;
+  justify-self: center;
+  align-self: center;
+}
+

@@ -1,0 +1,40 @@
+
+.btn-log {
+  grid-area: login;
+  grid-column: 10 / 10;
+  align-self: center;
+  border-radius: 20px;
+  margin: 0;
+  border: 0px;
+  width: 80px;
+  height: 25px;
+  color: #535353;
+  background-color: rgba(2%, 2%, 9%, 0.38);
+}
+
+.btn-log:hover {
+  color: #fff;
+  background-color: rgb(2%, 2%, 9%);
+}
+
+.btn-log:active {
+  color: #535353;
+  background-color: rgb(2%, 2%, 9%);
+  border: 1px solid #868686;
+}
+
+.btn-log:focus{
+  outline: none;
+}
+
+.username {
+  grid-area: login;
+  grid-column: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin: 0 0px 0 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
